@@ -57,23 +57,38 @@ button:focus-visible {
 
 .navbar {
   display: flex;  
-  flex-direction: row;
+  justify-content: space-between;
   font-size: large;
   padding-top: 3em;
   padding-bottom: 2em;
   margin-right: 2em;
   margin-left: 4em;
-  justify-content: space-between;
+}
+
+.header-selection {
+  color: white;
+  font-size: large;
+  margin-right: 2em;
+  margin-left: 4em;
+}
+
+.header-about {
+  color: white;
+  font-size: large;
+  margin-right: 2em;
+  margin-left: 4em;
 }
 
 .logo {
   font: white;
 }
 
-.selection.banner {
-  font-size: xx-large;
+.selection-banner {
+  font-size: x-large;
   margin-top: 2em;
   margin-bottom: 2em;
+  color: white; 
+  background-color: rgb(57, 77, 91);
 }
 
 .selection-button {
@@ -81,6 +96,13 @@ button:focus-visible {
   padding: 1em;
   font-size: large;
   color: white
+}
+
+.selection-buttons {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 .selection-header {

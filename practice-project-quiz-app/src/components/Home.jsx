@@ -1,10 +1,9 @@
-import Header from "./Header";
-
+import Selection from './Selection.jsx';
 
 function Home() {
 
     return <> 
-    <div>Welcome to the Home Page</div>
+        <Selection />
     </>;
 
 }
