@@ -15,28 +15,7 @@ function Selection() {
     }
 
     const fetchQuizData = async () => {
-        try {
-
-            const response = await fetch('https://the-trivia-api.com/v2/questions', {
-                method: 'GET'
-            })
-
-            if (!response.ok) {
-
-                let errData = await response.json();
-
-                throw new Error(errData.message || '******Failed to fetch exams********');
-
-
-            }
-
-            const data = await response.json();
-            setQuizData(data);
-            
-
-        } catch (error) {
-            console.error('Error fetching quiz data:', error);
-        }
+        
     }
 
     return (
