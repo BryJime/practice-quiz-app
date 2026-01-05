@@ -8,16 +8,16 @@ body {
 
 body {
   font-family: 'Inter', sans-serif;
-  background-color: rgb(246, 248, 253);
+  background-color: #f0efef;
 }
 
 a {
   font-weight: 500;
-  color: #ffffff;
+  color: #000000;
   text-decoration: inherit;
 }
 a:hover {
-  color: #ffffff;
+  color: #3c3c3c;
 }
 
 h1 {
@@ -49,10 +49,12 @@ button:focus-visible {
   
   flex-direction: row;
   justify-content: space-around;
-  background-color: rgb(57, 77, 91);
+  background-color: rgb(255, 255, 255);
   padding-top: 1px;
   padding-bottom: 1px;
-
+  border: 0px;
+  border-bottom: 1px solid #1a1a1a;
+  
 }
 
 .navbar {
@@ -80,7 +82,7 @@ button:focus-visible {
 }
 
 .logo {
-  font: white;
+  color: #213547;
 }
 
 .selection-banner {
@@ -88,14 +90,17 @@ button:focus-visible {
   margin-top: 2em;
   margin-bottom: 2em;
   color: white; 
-  background-color: rgb(57, 77, 91);
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px;
+  max-width: 30em;
 }
 
 .selection-button {
   margin: 1em;
   padding: 1em;
   font-size: large;
-  color: white
+  color: white;
+  background-color: rgb(68, 106, 142);
 }
 
 .selection-buttons {
@@ -107,7 +112,35 @@ button:focus-visible {
 
 .selection-header {
   text-align: center;
+  color: black
 }
+
+.make-your-own-banner {
+  font-size: x-large;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  color: white; 
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+.make-your-own-header {
+  text-align: center;
+  color: black
+}
+
+.make-your-own-button {
+  margin: 1em;
+  padding: 1em;
+  font-size: large;
+  color: white;
+  background-color: rgb(68, 106, 142);
+}
+
+.quizpage-header {
+  text-align: center;
+  margin-top: 1em;
+} 
 
 @media (prefers-color-scheme: light) {
   :root {

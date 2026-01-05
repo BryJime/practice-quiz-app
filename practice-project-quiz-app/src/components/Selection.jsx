@@ -1,26 +1,16 @@
-import { Link } from 'react-router-dom';
-import { useState } from 'react';
-import QuizesData from '../MockData/QuizesData';
 import { useNavigate } from 'react-router-dom';
 
 function Selection() {
 
-    const [ showQuiz, setShowQuiz ] = useState(null);
-    const [ quizData, setQuizData ] = useState([]);
 
     const navigate = useNavigate();
 
     const handleCategorySelect = (category) => {
 
-
-        console.log(`Selected category: ${category}`);
-
         navigate('/quizpage', { state: { category } });
     }
 
-    const fetchQuizData = async () => {
-        
-    }
+
 
     return (
         <div>
