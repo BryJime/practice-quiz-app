@@ -1,4 +1,6 @@
 import { useNavigate } from 'react-router-dom';
+import ClipboardImage from '../Images/clipboard-home-image.png';
+
 
 function Selection() {
 
@@ -13,7 +15,7 @@ function Selection() {
 
 
     return (
-        <div>
+        <div className="selection-container">
             <div className="selection-banner">
                 <h2 className='selection-header'>Select Your Quiz Category</h2>
                 <section className="selection-buttons">
@@ -27,6 +29,10 @@ function Selection() {
                     <button className="selection-button" onClick={() => handleCategorySelect('Geography')}>Geography</button>
                 </section>
             </div>
+
+            <picture className="clipboard-home-image-container" >
+                <img src={ClipboardImage} alt="clipboard-image" width="600" height="400" />
+            </picture>
 
         </div >
     )
