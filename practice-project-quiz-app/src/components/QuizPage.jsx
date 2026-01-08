@@ -8,14 +8,53 @@ function QuizPage() {
   const { state } = useLocation();
   const { category } = state;
 
-  
+  let findCategoryQuestions = () => {
+
+  }
 
   console.log();
-  
+
   return (
     <>
-      <div>
-        <h1 className="quizpage-header"> {category} </h1>
+      <div className="quizpage-container">
+
+        <div>
+          <h1 className="quizpage-header"> {category} </h1>
+        </div>
+
+        <article className="quiz-question-container">
+
+          <div className="quiz-question-header">
+            <div className="quiz-question-text-container">
+              <h1 className="quiz-question-number"> 1/10 </h1>
+              <h1 className="quiz-question-text"> Question Text Here </h1>
+            </div>
+          </div>
+
+          <hr />
+          
+          <br />
+
+          <div className="quiz-answer-buttons-container">
+            <button className="quiz-answer-button"> Answer 1 </button>
+            <button className="quiz-answer-button"> Answer 2 </button>
+            <button className="quiz-answer-button"> Answer 3 </button>
+            <button className="quiz-answer-button"> Answer 4 </button>
+          </div>
+
+          <br />
+
+
+          <div className="submit-button-container">
+            <button className="submit-answer-button"> Submit </button>
+          </div>
+
+          <section className="quiz-answer-feedback-container">
+            <h2 className="quiz-answer-feedback"> Correct or Incorrect </h2>
+          </section>
+
+        </article>
+
       </div>
     </>
   );

@@ -19,7 +19,6 @@ function Home() {
         <div className="make-your-own-banner">
             <h2 className='make-your-own-header'> Make Your Own Quiz! </h2>
             <button className="make-your-own-button" onClick={() => handleStartNow()}>Start Now</button>
-
         </div>
 
     </>;
