@@ -1,6 +1,6 @@
 import QuizesData from "../MockData/QuizesData";
 import { useLocation } from "react-router-dom";
-
+import { useState } from "react";
 
 
 function QuizPage() {
@@ -8,11 +8,20 @@ function QuizPage() {
   const { state } = useLocation();
   const { category } = state;
 
-  let findCategoryQuestions = () => {
+  const [questions, setQuestions] = useState([]);
+
+
+
+  let quizQuestions = QuizesData.map(quiz => {
+    quiz.category === category ? setQuestions(quiz.questions) : null
+  });
+
+  
+
+  const findCategoryQuestions = () => {
 
   }
 
-  console.log();
 
   return (
     <>
@@ -32,7 +41,7 @@ function QuizPage() {
           </div>
 
           <hr />
-          
+
           <br />
 
           <div className="quiz-answer-buttons-container">

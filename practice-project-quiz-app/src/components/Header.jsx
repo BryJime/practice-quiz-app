@@ -6,9 +6,9 @@ function Header() {
         <header className="header">
             <h1 className="logo"><Link to="/">QuizMate</Link></h1>
             <section className="navbar">
-                <selection className="header-contact">
+                <section className="header-contact">
                     <Link to="/contact">Contact</Link>
-                </selection>
+                </section>
                 <section className="header-about">
                     <Link to="/about">About</Link>
                 </section>
