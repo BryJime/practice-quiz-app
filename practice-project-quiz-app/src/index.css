@@ -211,7 +211,21 @@ button:focus-visible {
   background-color: rgb(68, 106, 142);
 }
 
+.navigation-buttons-container {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
 
+.quiz-answer-feedback-correct {
+  color: green;
+}
+
+.quiz-answer-feedback-incorrect {
+  color: red;
+}
 
 @media (prefers-color-scheme: light) {
   :root {
